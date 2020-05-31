@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [TestLink Project]">
+  <test parallel="none" name="UserManagement(failed)">
+    <classes>
+      <class name="TestLink.TestCases.userManagement.TS_TL_003_AddUser">
+        <methods>
+          <include name="CreateUserValidCase" invocation-numbers="0"/>
+          <include name="LoginUserCreated"/>
+        </methods>
+      </class> <!-- TestLink.TestCases.userManagement.TS_TL_003_AddUser -->
+      <class name="TestLink.TestCases.login.TS_TL_001_Authentication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestLink.TestCases.login.TS_TL_001_Authentication -->
+    </classes>
+  </test> <!-- UserManagement(failed) -->
+</suite> <!-- Failed suite [TestLink Project] -->

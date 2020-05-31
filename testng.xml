@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestLink Project">
+
+	  <test  name="login">
+		<classes>
+			<class name="TestLink.TestCases.login.TS_TL_001_Authentication">
+		        <methods>
+
+		          <include name="authenticationValidCase"/>
+		          <!-- <include name="authenticationInvalidCase"/> -->
+		        </methods>
+			</class>
+	   </classes> 
+	  </test>  
+	  
+	  <test  name="UserManagement">
+		<classes>
+			<class name="TestLink.TestCases.userManagement.TS_TL_003_AddUser">
+		        <methods>
+
+		          <include name="CreateUserValidCase"/>
+		          <include name="LoginUserCreated"/>
+		        </methods>
+			</class>
+	   </classes> 
+	  </test> 
+	    
+</suite> <!-- TestLink Project  -->
+
+     
+     
+
+  
+
+  
+
