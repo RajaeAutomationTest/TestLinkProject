@@ -43,7 +43,7 @@ public class TestBase {
 	}
 
 	public void initialisation ()  {
-		System.setProperty("webdriver.chrome.driver", "D:\\Projets Eclipse\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(URL);

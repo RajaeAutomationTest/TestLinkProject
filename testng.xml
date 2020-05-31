@@ -4,11 +4,11 @@
 
 	  <test  name="login">
 		<classes>
-			<class name="TestLink.TestCases.login.TS_TL_001_Authentication">
+			<class name="TestLink.TestCases.login.Login">
 		        <methods>
-
-		          <include name="authenticationValidCase"/>
-		          <!-- <include name="authenticationInvalidCase"/> -->
+				  <include name="loginInvalidCase"/>
+		          <include name="loginValidCase"/>
+		           
 		        </methods>
 			</class>
 	   </classes> 
@@ -16,7 +16,7 @@
 	  
 	  <test  name="UserManagement">
 		<classes>
-			<class name="TestLink.TestCases.userManagement.TS_TL_003_AddUser">
+			<class name="TestLink.TestCases.userManagement.CreateUser">
 		        <methods>
 
 		          <include name="CreateUserValidCase"/>
