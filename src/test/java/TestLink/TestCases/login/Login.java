@@ -11,7 +11,7 @@ import TestLinkIntegration.testlinkIntegration;
 import testlink.api.java.client.TestLinkAPIException;
 import testlink.api.java.client.TestLinkAPIResults;
 
-public class TS_TL_001_Authentication extends TestBase {
+public class Login extends TestBase {
 //	LogInPage loginPage;
 //	HomePage homePage;
 //	UserManagementPage userManagementPage;
@@ -28,9 +28,9 @@ public class TS_TL_001_Authentication extends TestBase {
 
 	}
 	
-	@Test(priority = 1, enabled = true, dataProvider = "LoginDataValidCase")
-	public void authenticationValidCase(String login, String password) throws TestLinkAPIException  {
-		String testlinkCase="001authenticationValidCase";
+	@Test(priority = 2, enabled = true, dataProvider = "LoginDataValidCase")
+	public void loginValidCase(String login, String password) throws TestLinkAPIException  {
+		String testlinkCase="loginValidCase";
 		String notes=null;
 		String result=null;
 		
@@ -58,10 +58,10 @@ public class TS_TL_001_Authentication extends TestBase {
 
 	}
 	
-	@Test(priority = 2, enabled = false, dataProvider = "LoginDataInvalidCase")
-	public void authenticationInvalidCase(String login, String password) throws TestLinkAPIException  {
+	@Test(priority = 1, enabled = true, dataProvider = "LoginDataInvalidCase")
+	public void loginInvalidCase(String login, String password) throws TestLinkAPIException  {
 	
-		String testlinkCase="002authenticationInvalidCase";
+		String testlinkCase="loginInvalidCase";
 		String notes=null;
 		String result=null;
 		

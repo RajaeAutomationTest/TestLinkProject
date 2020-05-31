@@ -12,7 +12,7 @@ import TestLink.POM.lostPasswordPage;
 import TestLink.POM.LogInPage;
 import TestLink.POM.TestBase;
 
-public class TS_TL_002_ForgetPass extends TestBase {
+public class ForgetPass extends TestBase {
 
 	lostPasswordPage lostPasswordPage;
 	LogInPage loginPage;
